@@ -24,15 +24,21 @@
   height: 98px;
   width: 240.51px;
   font-style: normal;
-  justify-self: flex-end;
+  justify-self: center;
+}
+
+.header .address {
+  padding-left: 72px;
 }
 
 .cover {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 757px;
   color: #fff;
-  background: url(../images/cover.jpg) center / cover;
-  position: relative;
   z-index: 0;
+  position: relative;
 }
 
 .lost {
@@ -41,7 +47,7 @@
 }
 
 .about {
-  padding: 0 24px 92px;
+  padding: 35px 24px 92px;
   background-color: #fff;
   display: grid;
   grid-template-columns: 334px 1fr;
@@ -72,6 +78,11 @@
   width: 100%;
 }
 
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
 .header__address {
   white-space: break-spaces;
 }
@@ -88,8 +99,9 @@
 
 .cover__title {
   font-size: 100px;
-  line-height: 115px;
-  padding: 165px 50px 237px;
+  display: grid;
+  padding: 165px 50px 135px;
+  gap: 8px;
 }
 
 .cover__description {
@@ -99,7 +111,6 @@
   gap: 79px;
   align-items: baseline;
   padding-left: 78px;
-  padding-bottom: 62px;
 }
 
 .lots__heading {
@@ -123,6 +134,7 @@
   align-self: center;
   font-size: 40px;
   text-transform: uppercase;
+  padding-left: 26px;
 }
 
 .about__text {
@@ -130,6 +142,7 @@
   font-size: 20px;
   display: grid;
   gap: 24px;
+  padding-left: 26px;
 }
 
 .footer__menu-list {
@@ -143,21 +156,19 @@
   list-style-type: none;
   text-decoration: none;
 }
-
 .aligned-text {
   text-transform: uppercase;
-  display: block;
   letter-spacing: 30px;
 }
 
 .aligned-text_center {
-  margin: auto;
   text-align: center;
 }
 
 .aligned-text_right {
-  margin-right: 0;
   text-align: right;
+  margin-right: -30px;
+  margin-bottom: -15px;
 }
 
 .cover__description-text {

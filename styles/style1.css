@@ -1,0 +1,7 @@
+.cover {
+    min-height: 757px;
+    color: #fff;
+    background-color: #fff;
+    position: relative;
+    z-index: 0;
+}
